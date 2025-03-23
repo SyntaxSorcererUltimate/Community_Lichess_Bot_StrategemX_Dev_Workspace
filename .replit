@@ -1,14 +1,3 @@
-
-entrypoint = "lichess-bot-master/lichess-bot.py"
-run = "cd lichess-bot-master && python3 lichess-bot.py"
-language = "python3"
-hidden = [".config", "venv", ".pytest_cache", "__pycache__", ".gitignore"]
-
+modules = ["python-3.11"]
 [nix]
-channel = "stable-23_11"
-
-[env]
-PYTHONPATH = "${PYTHONPATH}:${REPL_HOME}/lichess-bot-master"
-
-[languages]
-python = "3.10"
+channel = "stable-24_05"
