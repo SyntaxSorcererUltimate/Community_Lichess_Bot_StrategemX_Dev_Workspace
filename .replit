@@ -11,3 +11,15 @@ PYTHONPATH = "${PYTHONPATH}:${REPL_HOME}/lichess-bot-master"
 
 [languages]
 python = 3.10
+
+[workflows]
+runButton = "Run"
+
+[[workflows.workflow]]
+name = "Run"
+author = 40643574
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python3 lichess-bot-master/lichess-bot.py"
