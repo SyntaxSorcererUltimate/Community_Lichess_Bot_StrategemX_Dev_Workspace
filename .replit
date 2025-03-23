@@ -1,7 +1,7 @@
 
-run = "python3 lichess-bot-master/lichess-bot.py"
-language = "python3"
 entrypoint = "lichess-bot-master/lichess-bot.py"
+run = "cd lichess-bot-master && python3 lichess-bot.py"
+language = "python3"
 hidden = [".config", "venv", ".pytest_cache", "__pycache__", ".gitignore"]
 
 [nix]
